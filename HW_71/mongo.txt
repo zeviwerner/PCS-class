@@ -1,0 +1,52 @@
+nrestricted.
+2017-03-07T20:29:54.988-0500 I CONTROL  [initandlisten]
+Uptime: 10 test 1> use school
+switched to db school
+Uptime: 15 school 2> db.students.insert([{first_name: 'donald',last_name:'trump',address:'white house',grade: 12},{first_name:'Mike',last_name:'Pence',address:'Penn ave',grade: 11},{first_name:'jared',last_name:'Kushner',grade:10},{first_name:'Chris',last_name:'Christie',address:'NJ',grade:9},{first_name:'zev',last_name:'werner',address:'Lakewood',grade:8}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 5,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+Uptime: 365 school 3> db.students.find('Donald')
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "ReferenceError: Donald is not defined :\n_funcs1@:1:24\n",
+        "code" : 139,
+        "codeName" : "JSInterpreterFailure"
+}
+Uptime: 406 school 4> db.students.find({first_name: 'Donald'})
+{ "_id" : ObjectId("58bf5b537457bd46b9eae59b"), "first_name" : "Donald", "last_name" : "trump", "grade" : 12 }
+{ "_id" : ObjectId("58bf5d35c57f5ca696e417c4"), "first_name" : "Donald", "last_name" : "Trump", "address" : "The White House", "grade" : 12 }
+Uptime: 504 school 5> db.students.find({first_name: 'Donald',grade:5})
+Uptime: 547 school 6> use store
+switched to db store
+Uptime: 562 store 7> db.products
+store.products
+Uptime: 577 store 8> db.products.insert([{name:'Soda',price:1},{name:'Snack',price:2}])
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 2,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+Uptime: 705 store 9> db.products.find()
+{ "_id" : ObjectId("58bf615082b5361c7e6b5d29"), "name" : "Soda", "price" : 1 }
+{ "_id" : ObjectId("58bf615082b5361c7e6b5d2a"), "name" : "Snack", "price" : 2 }
+Uptime: 720 store 10> db.products.remove()
+2017-03-07T20:42:07.326-0500 E QUERY    [thread1] Error: remove needs a query :
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:409:1
+DBCollection.prototype.remove@src/mongo/shell/collection.js:434:18
+@(shell):1:1
+Uptime: 736 store 11> db.products.remove({})
+WriteResult({ "nRemoved" : 2 })
+Uptime: 773 store 12>
