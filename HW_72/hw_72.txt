@@ -1,0 +1,1237 @@
+Uptime: 11 test 1> use school
+switched to db school
+Uptime: 34 school 2> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "Donald",
+        "last_name" : "Trump",
+        "address" : "The White House",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 9
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 8
+^C                   db.students.update({_id: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name: "Dan",last_name: "Mil})
+byeime: 56 school 3> db.students.update({_id: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name: "Dan",last_name: "Mil})
+'C:/Progra~2/Micros~1db.students.update({_id: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name: "Dan",last_name: "Mill})
+C:\Users\zeviw>mongobdb.students.update({_id: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name: "Dan",last_name: "Mille})
+editor exited with erdb.students.update({_id: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name: "Dan",last_name: "Miller})ime: 64 school 4> db.stude
+C:\Users\zeviw>: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name: "Dan",last_name: "Mil})
+
+C:\Users\zeviw>mongo
+MongoDB shell version v3.4.2
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.2
+Server has startup warnings:
+2017-03-20T10:26:21.998-0400 I CONTROL  [initandlisten]
+2017-03-20T10:26:21.998-0400 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-03-20T10:26:21.999-0400 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-03-20T10:26:21.999-0400 I CONTROL  [initandlisten]
+Uptime: 670 test 1> use school
+switched to db school
+Uptime: 676 school 2> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "Donald",
+        "last_name" : "Trump",
+        "address" : "The White House",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 9
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 8
+}
+Uptime: 687 school 3> db.students.update({_id: ObjectId("58bf5d35c57f5ca696e417c4")},{first_name:"joe",last_name:"miller",address:"123 freedom",grade:5})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Uptime: 924 school 4> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 9
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 8
+}
+Uptime: 928 school 5> db.students.update({grade: 8},{$set: {grade:9},{multi:true}})
+2017-03-20T10:44:43.043-0400 E QUERY    [thread1] SyntaxError: invalid property id @(shell):1:47
+Uptime: 1104 school 6> db.students.update({grade: 8},{$set: {grade:9}},{multi:true})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Uptime: 1170 school 7> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 9
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 9
+}
+Uptime: 1174 school 8> db.students.update({grade: 9},{$inc:{grade: 1}},{multi:true})
+WriteResult({ "nMatched" : 2, "nUpserted" : 0, "nModified" : 2 })
+Uptime: 1356 school 9> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10
+}
+Uptime: 1358 school 10> db.students.update({grade: 10},{$set:{scores: [95,98,93]}},{multi:true})
+WriteResult({ "nMatched" : 3, "nUpserted" : 0, "nModified" : 3 })
+Uptime: 1669 school 11> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93
+        ]
+}
+Uptime: 1671 school 12> db.students.update({grade: 10},{$push: {scores: {$each: [85,86,87,88,89]}}},{multi:true})
+WriteResult({ "nMatched" : 3, "nUpserted" : 0, "nModified" : 3 })
+Uptime: 2053 school 13> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                85,
+                86,
+                87,
+                88,
+                89
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                85,
+                86,
+                87,
+                88,
+                89
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                85,
+                86,
+                87,
+                88,
+                89
+        ]
+}
+Uptime: 2055 school 14> db.students.update({grade: 10},{$pop:{scores: 1}},{multi:true})
+WriteResult({ "nMatched" : 3, "nUpserted" : 0, "nModified" : 3 })
+Uptime: 2279 school 15> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                85,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                85,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                85,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 2281 school 16> db.students.update({grade: 10},{$pull:{scores: 85}},{multi:true})
+WriteResult({ "nMatched" : 3, "nUpserted" : 0, "nModified" : 3 })
+Uptime: 2406 school 17> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 2408 school 18> db.students.find({grade:{$gt: 10}}).pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+Uptime: 2589 school 19> db.students.find({grade:{$gt: 10}},{first_name: "Mike"}).pretty()
+{ "_id" : ObjectId("58bf5b537457bd46b9eae59b"), "first_name" : "Donald" }
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"), "first_name" : "donald" }
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"), "first_name" : "Mike" }
+Uptime: 2727 school 20> db.students.find({$and: {grade:{$gt: 10}}},{first_name: "Mike"}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "$and must be an array",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+Uptime: 2922 school 21> db.students.find({$and: [{grade:{$gt: 10}}},{first_name: "Mike"}]).pretty()
+2017-03-20T11:15:39.348-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:42
+Uptime: 2960 school 22> db.students.find({$and: [{grade:{$gt: 10}},{first_name: "Mike"}]).pretty()
+...
+...
+Uptime: 3011 school 23>
+Uptime: 3011 school 24> db.students.find({$and: [{grade:{$gt: 10}},{first_name: "Mike"}]}).pretty()
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+Uptime: 3068 school 25> db.students.find({$or: [{grade:{$gt: 12}}},{first_name: "Donald"}]).pretty()
+2017-03-20T11:18:46.350-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:41
+Uptime: 3147 school 26> db.students.find({$or: [{grade:{$gt: 12}}},{first_name: "Donald"}]}).pretty()
+2017-03-20T11:19:11.334-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:41
+Uptime: 3172 school 27> db.students.find({$or: [{grade:{$lt: 12}}},{first_name: "Donald"}]}).pretty()
+2017-03-20T11:19:38.373-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:41
+Uptime: 3199 school 28> db.students.find({$or: [{grade:{$lt: 12}},{first_name: "Donald"}]}).pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 3226 school 29> db.students.find({grade: {$ne: 12}}).pretty()
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 3309 school 30> db.students.find({grade: {$in:[12]}}).pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+Uptime: 3429 school 31> db.students.find({grade: {$nin:[12]}}).pretty()
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 3452 school 32> db.students.find({grade: {$not:{$gt:10}}).pretty()
+...
+...
+Uptime: 3567 school 33> db.students.find({grade: {$not:{$gt:10}}}).pretty()
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 3620 school 34> db.students.find().sort({last_name:1}).pretty()
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+Uptime: 3826 school 35> db.students.find().sort({last_name:1}).limit(3)
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"), "first_name" : "Chris", "last_name" : "Christie", "address" : "NJ", "grade" : 10, "scores" : [ 95, 98, 93, 86, 87, 88 ] }
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"), "first_name" : "jared", "last_name" : "Kushner", "grade" : 10, "scores" : [ 95, 98, 93, 86, 87, 88 ] }
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"), "first_name" : "Mike", "last_name" : "Pence", "address" : "Penn ave", "grade" : 11 }
+Uptime: 3882 school 36> db.students.find().sort({last_name:1}).limit(3).skip(3)
+{ "_id" : ObjectId("58bf5d35c57f5ca696e417c4"), "first_name" : "joe", "last_name" : "miller", "address" : "123 freedom", "grade" : 5 }
+{ "_id" : ObjectId("58bf5b537457bd46b9eae59b"), "first_name" : "Donald", "last_name" : "trump", "grade" : 12 }
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"), "first_name" : "donald", "last_name" : "trump", "address" : "white house", "grade" : 12 }
+Uptime: 3959 school 37> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push:{mother:"hillary",father:"bill"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Uptime: 4396 school 38> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ],
+        "mother" : [
+                "hillary"
+        ],
+        "father" : [
+                "bill"
+        ]
+}
+Uptime: 4411 school 39> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push: [{mother:"hillary",father:"bill"}]}).pretty()
+2017-03-20T11:41:08.591-0400 E QUERY    [thread1] TypeError: db.students.update(...).pretty is not a function :
+@(shell):1:1
+Uptime: 4489 school 40> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push: [mother:"hillary",father:"bill"]}).pretty()
+2017-03-20T11:41:47.873-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:78
+Uptime: 4528 school 41> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push: {[mother:"hillary",father:"bill"]}}).pretty()
+2017-03-20T11:42:34.123-0400 E QUERY    [thread1] SyntaxError: missing ] in computed property name @(shell):1:79
+Uptime: 4575 school 42> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push: [mother:"hillary",father:"bill"]})
+2017-03-20T11:44:33.798-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:78
+Uptime: 4694 school 43> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push: [{mother:"hillary",father:"bill"}]}).pretty()
+2017-03-20T11:44:50.045-0400 E QUERY    [thread1] TypeError: db.students.update(...).pretty is not a function :
+@(shell):1:1
+Uptime: 4711 school 44> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d28")},{$push:{mother:"hillary",father:"bill"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Uptime: 4717 school 45> db.students.find({students.father:"bill})
+2017-03-20T11:45:58.269-0400 E QUERY    [thread1] SyntaxError: missing : after property id @(shell):1:26
+Uptime: 4779 school 46> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d27")},{$push: {parents:[mother:"joan",father:"jack"]}})
+2017-03-20T11:49:54.591-0400 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):1:87
+Uptime: 5015 school 47> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d27")},{$push: {parents:[{mother:"joan",father:"jack"}]}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Uptime: 5107 school 48> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ],
+        "parents" : [
+                [
+                        {
+                                "mother" : "joan",
+                                "father" : "jack"
+                        }
+                ]
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ],
+        "mother" : [
+                "hillary",
+                "hillary"
+        ],
+        "father" : [
+                "bill",
+                "bill"
+        ]
+}
+Uptime: 5113 school 49> db.students.find({parents.father:"jack"})
+2017-03-20T11:52:13.137-0400 E QUERY    [thread1] SyntaxError: missing : after property id @(shell):1:25
+Uptime: 5154 school 50> db.students.update({_id: ObjectId("58bf5ffc82b5361c7e6b5d27")},{$push: {parents:{mother:"joan",father:"jack"}}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Uptime: 5323 school 51> db.students.find().pretty()
+{
+        "_id" : ObjectId("58bf5b537457bd46b9eae59b"),
+        "first_name" : "Donald",
+        "last_name" : "trump",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5d35c57f5ca696e417c4"),
+        "first_name" : "joe",
+        "last_name" : "miller",
+        "address" : "123 freedom",
+        "grade" : 5
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d24"),
+        "first_name" : "donald",
+        "last_name" : "trump",
+        "address" : "white house",
+        "grade" : 12
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d25"),
+        "first_name" : "Mike",
+        "last_name" : "Pence",
+        "address" : "Penn ave",
+        "grade" : 11
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d26"),
+        "first_name" : "jared",
+        "last_name" : "Kushner",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"),
+        "first_name" : "Chris",
+        "last_name" : "Christie",
+        "address" : "NJ",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ],
+        "parents" : [
+                [
+                        {
+                                "mother" : "joan",
+                                "father" : "jack"
+                        }
+                ],
+                {
+                        "mother" : "joan",
+                        "father" : "jack"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("58bf5ffc82b5361c7e6b5d28"),
+        "first_name" : "zev",
+        "last_name" : "werner",
+        "address" : "Lakewood",
+        "grade" : 10,
+        "scores" : [
+                95,
+                98,
+                93,
+                86,
+                87,
+                88
+        ],
+        "mother" : [
+                "hillary",
+                "hillary"
+        ],
+        "father" : [
+                "bill",
+                "bill"
+        ]
+}
+Uptime: 5326 school 52> db.students.find({parents.father:"jack"})
+2017-03-20T11:55:12.220-0400 E QUERY    [thread1] SyntaxError: missing : after property id @(shell):1:25
+Uptime: 5333 school 53> db.students.find({(parents.father):"jack"})
+2017-03-20T11:55:55.571-0400 E QUERY    [thread1] SyntaxError: invalid property id @(shell):1:18
+Uptime: 5376 school 54> db.students.find({"parents.father":"jack"})
+{ "_id" : ObjectId("58bf5ffc82b5361c7e6b5d27"), "first_name" : "Chris", "last_name" : "Christie", "address" : "NJ", "grade" : 10, "scores" : [ 95, 98, 93, 86, 87, 88 ], "parents" : [ [ { "mother" : "joan", "father" : "jack" } ], { "mother" : "joan", "father" : "jack" }
